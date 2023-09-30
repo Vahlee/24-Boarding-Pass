@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boarding Pass</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant&family=Barriecito&family=Bebas+Neue&family=Borel&family=Caveat&family=Comic+Neue&family=DM+Serif+Display:ital@1&family=Dosis:wght@800&family=Libre+Baskerville&family=Lora:ital,wght@0,400;1,400;1,600&family=Montserrat&family=Mooli&family=Open+Sans:wght@300&family=Orbitron&family=Pacifico&family=Pangolin&family=Raleway&family=Roboto+Mono:ital,wght@1,300&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'Montserrat', sans-serif;
+        background-image: url(./background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+
+    .container {
+        background-color: #F1EFEF;
+        width:450px;
+        text-align: center;
+        border-radius: 3%;
+    }
+
+    .space {
+        display:flex;
+        justify-content: center;
+        gap: 80px;
+        font-weight: 700;
+        
+    }
+
+    .distance {
+        display: flex;
+        justify-content: center;
+    }
+
+    .identity {
+        font-size: large;
+        font-weight: bold;
+    }
+
+    h2 {
+        color: red;
+    }
+   
+    span1 {
+        color:green
+    }
+
+    span2 {
+        color: black;
+    }
+
+    span3 {
+        color:#26577C;
+    }
+
+    span4 {
+        color:#E55604;
+    }
+
+    span5 {
+        color:black;
+    }
+
+    .button {
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    button {
+       background-color:green;
+       width: 150px;
+       height: 30px;
+       border:0;
+       cursor: pointer;
+       border-radius: 5%;
+       color:#F1EFEF;
+    }
+
+    .scan {
+        margin-bottom: 5%;
+    }
+    
+</style>
+<body>
+    <div class="container">
+       <div>
+          <h1><span3>Vic</span3><span4>Air</span4><span5> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16">
+            <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Z"/>
+          </svg></span5></h1>
+       </div>
+        <div class="identity"><p>IM1922</p></div>
+      <div class="distance"><h2>LOS <span2><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+          <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z"/>
+         </svg></span2>  <span1>ABB</span1></h2></div>
+      <div>
+           <h3>Boarding</h3>
+          <p>O1 Oct 23, 10:25 AM </p>
+      </div>
+      <div class="space">
+           <p>Seat <br> 20 A</p>
+          <p>Gate <br>05</p>
+      </div>
+      <div class="button"> 
+          <button>1 NOTIFICATION</button>
+      </div>
+      <div  class="scan">
+           <img src="./scan.png" alt="scan-qr-code">
+      </div>
+    </div>
+</body>
+</html>
